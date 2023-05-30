@@ -1,0 +1,77 @@
+
+/*--------------------------------------------------------  
+/ 
+/    Stylesheet for Random Quote Generator
+/    Version: 1.0
+/    Author: Clayton Jinks
+/    Date: 5/29/3023
+/ 
+/ --------------------------------------------------------
+ */
+ 
+ body {
+    background-color: #041927;
+}
+
+.quote-container {
+    position: relative;
+    top: 75px;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+/*  Quote text style  */
+#quote {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #d8d8d8;
+    transition: 1.0s;
+}
+
+/*  Fade animationse  */
+.fade-in {
+    opacity: 0;
+    animation: fade-in-animation 1s forwards;
+  }
+  
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }  
+
+  .fade-out {
+    opacity: 1;
+    animation: fade-out-animation 1s forwards;
+  }
+  
+  @keyframes fade-out-animation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+/*  Button styles  */
+.quote-gen {
+    margin-right: 15px;
+    padding: 15px;
+    border: 1px solid #d6e3cf;;
+    border-radius: 10px;
+    background-color: #272728;
+    box-shadow: 0px 0px 20px rgba(27, 27, 27, 0.9); 
+    color: #d6e3cf;
+}
+
+.quote-gen:hover {
+    background-color: #84a98c;
+    transition: 1.0s;
+}
